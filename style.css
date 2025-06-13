@@ -29,6 +29,28 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background: var(--background-color);
+  scrollbar-width: thin;              /* For Firefox */
+  scrollbar-color: #2563eb #f3f4f6;   /* For Firefox */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar, .container::-webkit-scrollbar {
+  width: 8px;
+  background: #f3f4f6;
+}
+
+body::-webkit-scrollbar-thumb, .container::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 8px;
+  border: 2px solid #f3f4f6;
+}
+
+body::-webkit-scrollbar-thumb:hover, .container::-webkit-scrollbar-thumb:hover {
+  background: #1746a0;
+}
+
+body::-webkit-scrollbar-corner, .container::-webkit-scrollbar-corner {
+  background: #f3f4f6;
 }
 
 .header-modern {
