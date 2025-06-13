@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: 'enhancePrompt',
-    title: 'Enhance Prompt with Prompt Perfect',
+    title: 'Enhance Prompt with Prompt Polish',
     contexts: ['editable']
   });
 
