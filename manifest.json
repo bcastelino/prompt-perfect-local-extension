@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Prompt Perfect Local",
-  "version": "1.0.0",
-  "description": "Enhance and organize your AI prompts with a local Chrome extension",
+  "name": "Prompt Polish Local",
+  "version": "1.7.0",
+  "description": "Enhance and organize your AI prompts with a local Chrome extension (Prompt Polish Local)",
   "permissions": [
     "storage",
     "contextMenus",
