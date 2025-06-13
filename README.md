@@ -1,6 +1,11 @@
 <div align="center">
 
-## Prompt Perfect Local
+<table>
+  <tr>
+    <td><img src="icons/icon.svg" alt="Logo" width="80"/></td>
+    <td><h1>Prompt Perfect Extension</h1></td>
+  </tr>
+</table>
 
 A Chrome extension for enhancing and organizing AI prompts, designed to work locally without any server dependencies.
 
