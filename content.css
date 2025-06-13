@@ -1,0 +1,76 @@
+/* Content script specific styles - scoped to our UI elements */
+.pp-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.pp-modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 500px;
+  position: relative;
+  z-index: 1000000;
+}
+
+.pp-modal h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.pp-modal-content {
+  margin-bottom: 15px;
+}
+
+.pp-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  line-height: 1;
+}
+
+.pp-modal-close:hover {
+  color: #333;
+}
+
+/* Ensure our styles don't leak into the page */
+.pp-modal *,
+.pp-modal-overlay * {
+  all: revert;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .pp-modal {
+    background: #1a1a1a;
+  }
+  
+  .pp-modal h3 {
+    color: #fff;
+  }
+  
+  .pp-modal-close {
+    color: #999;
+  }
+  
+  .pp-modal-close:hover {
+    color: #fff;
+  }
+} 
