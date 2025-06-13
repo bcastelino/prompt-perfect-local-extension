@@ -31,20 +31,22 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 ---
 ## 🖼️ Extension Preview
 
-### 🔹 Enter Your Prompt
-<img src="preview/rawprompt.png" alt="Prompt Input UI" width="400"/>
-
-### ⚙️ Enhanced Prompt Generation
-<img src="preview/enhancedprompt.png" alt="Enhanced Prompt UI" width="400"/>
-
-### 📁 Saved Prompts and Copy Feature
-<img src="preview/savedprompt.png" alt="Saved Prompts UI" width="400"/>
-
-<p align="center">
-  <img src="preview/rawprompt.png" alt="Prompt Input UI" width="30%"/>
-  <img src="preview/enhancedprompt.png" alt="Enhanced Prompt UI" width="30%" style="margin: 0 10px;"/>
-  <img src="preview/savedprompt.png" alt="Saved Prompts UI" width="30%"/>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="/preview/rawprompt.png" alt="Prompt Input UI" width="350"/><br/>
+      <strong>Prompt Input</strong>
+    </td>
+    <td align="center">
+      <img src="/preview/enhancedprompt.png" alt="Enhanced Prompt UI" width="350"/><br/>
+      <strong>Enhanced Prompt</strong>
+    </td>
+    <td align="center">
+      <img src="/preview/savedprompt.png" alt="Saved Prompts UI" width="350"/><br/>
+      <strong>Saved Prompts</strong>
+    </td>
+  </tr>
+</table>
 
 ---
 ## 💻 Installation
