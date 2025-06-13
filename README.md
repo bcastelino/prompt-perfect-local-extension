@@ -29,7 +29,24 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 - **No Chatbot Integration**: You manually copy the enhanced prompt and paste it into any AI chatbot of your choice
 
 ---
+## 🖼️ Extension Preview
 
+### 🔹 Enter Your Prompt
+<img src="preview/rawprompt.png" alt="Prompt Input UI" width="400"/>
+
+### ⚙️ Enhanced Prompt Generation
+<img src="preview/enhancedprompt.png" alt="Enhanced Prompt UI" width="400"/>
+
+### 📁 Saved Prompts and Copy Feature
+<img src="preview/savedprompt.png" alt="Saved Prompts UI" width="400"/>
+
+<p align="center">
+  <img src="preview/rawprompt.png" alt="Prompt Input UI" width="30%"/>
+  <img src="preview/enhancedprompt.png" alt="Enhanced Prompt UI" width="30%" style="margin: 0 10px;"/>
+  <img src="preview/savedprompt.png" alt="Saved Prompts UI" width="30%"/>
+</p>
+
+---
 ## 💻 Installation
 
 1. Download or clone this repository to your local machine
@@ -141,6 +158,7 @@ flowchart TD
 ├── style.css                  # Shared styles for the popup
 ├── content.css                # Content script styles (scoped, prevents style leakage)
 ├── openrouter_secrets.js      # (Not committed) OpenRouter API key
+├── interface screenshots      # UI Preview
 └── icons/                     # Extension icons
 ```
 
