@@ -52,7 +52,7 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 ## 💻 Installation & 🔗 API Integration
 
 1. Download or clone this repository to your local machine
-2. Update the `openrouter_secrets.js` file in the extension root with your [OpenRouter API key](https://openrouter.ai/):
+2. Update the `openrouter_secrets.js` file in the extension root with your [OpenRouter API key](https://openrouter.ai/settings/keys):
 
    ```js
    window.OPENROUTER_API_KEY = 'sk-...'; // Your OpenRouter API key
@@ -103,6 +103,7 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 ## ⚙ Workflow
 
 ```mermaid
+
 flowchart TD
     A["User opens extension popup"] L_A_B_0@--> B["User enters prompt in textarea"]
     B L_B_C_0@--> C@{ label: "Clicks 'Enhance Prompt'" }
