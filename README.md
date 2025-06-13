@@ -113,7 +113,7 @@ For enhanced features, you **must** add your OpenRouter API key in `openrouter_s
 3. Reload the extension on Chrome.
 
 ---
-## ⚙ How It Works
+## ⚙ Workflow
 
 ```mermaid
 
