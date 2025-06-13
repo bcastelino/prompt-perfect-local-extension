@@ -49,10 +49,10 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 </table>
 
 ---
-## 💻 Installation
+## 💻 Installation & 🔗 API Integration
 
 1. Download or clone this repository to your local machine
-2. Create an `openrouter_secrets.js` file in the extension root with your OpenRouter API key:
+2. Update the `openrouter_secrets.js` file in the extension root with your [OpenRouter API key](https://openrouter.ai/):
 
    ```js
    window.OPENROUTER_API_KEY = 'sk-...'; // Your OpenRouter API key
@@ -62,6 +62,22 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 5. Enable **Developer mode** in the top right corner
 6. Click **Load unpacked** and select the extension directory
 7. The extension icon should appear in your Chrome toolbar
+
+**Optional:** Run a different model of choice
+
+1. Choose your own [Model](https://openrouter.ai/models?max_price=0) from the free models available on OpenRouter.
+2. Copy the model name and replace it in the `popup.js` file.
+
+
+   ```
+   Other free `$models` to choose from:
+   mistralai/mistral-7b-instruct:free
+   meta-llama/llama-3.3-8b-instruct:free
+   meta-llama/llama-4-maverick:free
+   microsoft/phi-4-reasoning:free
+   nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+   ```
+3. Reload the extension in Chrome.
 
 ---
 ## 👀 Usage
@@ -81,36 +97,6 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 - Click any saved prompt to load it into the input area
 - Edit and enhance as needed
 - Prompts are stored locally and are not used for anything else
-
----
-## 🔗 API Integration (Required)
-
-For enhanced features, you **must** add your OpenRouter API key in `openrouter_secrets.js`:
-
-1. Get an API key from [OpenRouter](https://openrouter.ai/)
-2. Create a file named `openrouter_secrets.js` in the extension root:
-
-   ```js
-   window.OPENROUTER_API_KEY = 'sk-...';
-   ```
-   (This file should be gitignored and never shared.)
-4. Reload the extension in Chrome.
-
-**Optional:** Run a different model of choice
-
-1. Choose your own [Model](https://openrouter.ai/models?max_price=0) from the free models available on OpenRouter.
-2. Copy the model name and replace it in the `popup.js` file.
-
-
-   ```
-   Other free `$models` to choose from:
-   mistralai/mistral-7b-instruct:free
-   meta-llama/llama-3.3-8b-instruct:free
-   meta-llama/llama-4-maverick:free
-   microsoft/phi-4-reasoning:free
-   nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-   ```
-3. Reload the extension on Chrome.
 
 ---
 ## ⚙ Workflow
