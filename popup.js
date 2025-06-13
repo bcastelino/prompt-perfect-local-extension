@@ -200,7 +200,7 @@ async function enhancePrompt(prompt) {
     return '';
   }
   try {
-    // Always use only the system and user message as specified
+    // Always use only the system and user messages as specified
     let messages = [
       {
         role: 'system',
@@ -218,8 +218,8 @@ async function enhancePrompt(prompt) {
       headers: {
         'Authorization': `Bearer ${window.OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://promptperfect.local',
-        'X-Title': 'Prompt Perfect Local'
+        'HTTP-Referer': 'https://promptpolishlocal.local',
+        'X-Title': 'Prompt Polish Local'
       },
       body: JSON.stringify({
         model: 'deepseek/deepseek-chat-v3-0324:free',
