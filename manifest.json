@@ -27,13 +27,23 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://bard.google.com/*",
+        "https://www.perplexity.ai/*"
+      ],
       "js": ["openrouter_secrets.js", "content.js"],
-      "css": ["style.css"]
+      "css": ["content.css"]
     }
   ],
   "web_accessible_resources": [{
-    "resources": ["openrouter_secrets.js"],
-    "matches": ["<all_urls>"]
+    "resources": ["openrouter_secrets.js", "content.css"],
+    "matches": [
+      "https://chat.openai.com/*",
+      "https://claude.ai/*",
+      "https://bard.google.com/*",
+      "https://www.perplexity.ai/*"
+    ]
   }]
 } 
