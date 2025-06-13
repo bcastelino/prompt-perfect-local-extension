@@ -138,7 +138,8 @@ flowchart TD
 ├── content.js                 # Context menu and input integration
 ├── popup.html                 # Main popup interface
 ├── popup.js                   # Popup logic
-├── style.css                  # Shared styles
+├── style.css                  # Shared styles for the popup
+├── content.css                # Content script styles (scoped, prevents style leakage)
 ├── openrouter_secrets.js      # (Not committed) OpenRouter API key
 └── icons/                     # Extension icons
 ```
