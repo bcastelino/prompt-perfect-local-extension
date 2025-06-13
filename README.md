@@ -160,7 +160,7 @@ flowchart TD
 ├── style.css                  # Shared styles for the popup
 ├── content.css                # Content script styles (scoped, prevents style leakage)
 ├── openrouter_secrets.js      # (Not committed) OpenRouter API key
-├── interface screenshots      # UI Preview
+├── preview                    # UI Preview
 └── icons/                     # Extension icons
 ```
 
