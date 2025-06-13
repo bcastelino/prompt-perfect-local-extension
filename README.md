@@ -14,7 +14,7 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 
 ---
 
-## Features
+## ⚡ Features
 
 - **Prompt Enhancement**: Instantly rewrite and optimize your prompts for better AI responses using best practices
 - **Prompt Library**: Save, organize, and reuse your favorite enhanced prompts
@@ -25,21 +25,22 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 
 ---
 
-## Installation
+## 💻 Installation
 
 1. Download or clone this repository to your local machine
-2. Create a `openrouter_secrets.js` file in the extension root with your OpenRouter API key:
+2. Create an `openrouter_secrets.js` file in the extension root with your OpenRouter API key:
+
    ```js
    window.OPENROUTER_API_KEY = 'sk-...'; // Your OpenRouter API key
    ```
    (This file should be gitignored and never shared.)
-3. Open Chrome and navigate to `chrome://extensions/`
-4. Enable **Developer mode** in the top right corner
-5. Click **Load unpacked** and select the extension directory
-6. The extension icon should appear in your Chrome toolbar
+4. Open Chrome and navigate to `chrome://extensions/`
+5. Enable **Developer mode** in the top right corner
+6. Click **Load unpacked** and select the extension directory
+7. The extension icon should appear in your Chrome toolbar
 
 ---
-## Usage
+## 👀 Usage
 
 ### Basic Usage
 
@@ -55,20 +56,21 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 - Saved prompts are shown in the popup under **Saved Prompts**
 - Click any saved prompt to load it into the input area
 - Edit and enhance as needed
-- Prompts are stored locally and are not used for anything else [If you disable or delete the extension the saved Prompts are lost]
+- Prompts are stored locally and are not used for anything else
 
 ---
-## API Integration (Required)
+## 🔗 API Integration (Required)
 
 For enhanced features, you **must** add your OpenRouter API key in `openrouter_secrets.js`:
 
 1. Get an API key from [OpenRouter](https://openrouter.ai/)
 2. Create a file named `openrouter_secrets.js` in the extension root:
+
    ```js
    window.OPENROUTER_API_KEY = 'sk-...';
    ```
    (This file should be gitignored and never shared.)
-3. Reload the extension in Chrome.
+4. Reload the extension in Chrome.
 
 **Optional:** Run a different model of choice
 
@@ -87,7 +89,7 @@ For enhanced features, you **must** add your OpenRouter API key in `openrouter_s
 3. Reload the extension on Chrome.
 
 ---
-## How It Works
+## ⚙ How It Works
 
 ```mermaid
 
@@ -119,7 +121,7 @@ flowchart TD
 ```
 
 ---
-## Development
+## 🛠 Development
 
 ### Project Structure
 
@@ -171,7 +173,7 @@ curl https://openrouter.ai/api/v1/chat/completions \
 - Check that enhanced prompts are properly saved and retrieved
 
 ---
-## Security
+## 👮🏻‍♂️ Security
 
 - No data is sent to external servers (except when using OpenRouter API)
 - All prompts are stored locally in your browser
@@ -179,14 +181,15 @@ curl https://openrouter.ai/api/v1/chat/completions \
 - No tracking or analytics
 
 ---
-## Limitations
+## 🙄 Limitations
 
 - Works only in Chrome/Chromium-based browsers
 - Requires manual installation (not available in Chrome Web Store)
-- OpenRouter API key is required for all enhancement features
+- An OpenRouter API key is required for all enhancement features
+- If you disable or delete the extension, the saved Prompts are lost
 
 ---
-## Contributing
+## 👨‍👨‍👧‍👦 Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -195,9 +198,9 @@ curl https://openrouter.ai/api/v1/chat/completions \
 5. Submit a pull request
 
 ---
-## Acknowledgments
+## 😉 Acknowledgments
 
-- Inspired by the original [Prompt Perfect chrome extension](https://chromewebstore.google.com/detail/prompt-perfect-ai-prompt/kigfbkddbfgbdbdekajodpggpkpfdjfp)
+- Inspired by the original Paid [Prompt Perfect chrome extension](https://chromewebstore.google.com/detail/prompt-perfect-ai-prompt/kigfbkddbfgbdbdekajodpggpkpfdjfp)
 - Built with vanilla JavaScript for maximum compatibility
 - Uses Chrome Extension Manifest V3
 - Implements modern web standards and best practices
