@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td><img src="icons/icon.svg" alt="Logo" width="80"/></td>
-    <td><h1>Prompt Perfect Extension</h1></td>
+    <td><h1>Prompt Polish Extension</h1></td>
   </tr>
 </table>
 
@@ -150,7 +150,7 @@ flowchart TD
 ### Project Structure
 
 ```
-/prompt-perfect-local-extension/
+/prompt-polish-local-extension/
 │
 ├── manifest.json              # Extension metadata
 ├── background.js              # Background tasks and context menu
@@ -160,7 +160,7 @@ flowchart TD
 ├── style.css                  # Shared styles for the popup
 ├── content.css                # Content script styles (scoped, prevents style leakage)
 ├── openrouter_secrets.js      # (Not committed) OpenRouter API key
-├── preview/                   # UI Preview
+├── preview                    # UI Preview
 └── icons/                     # Extension icons
 ```
 
