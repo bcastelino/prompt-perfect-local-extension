@@ -18,25 +18,17 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text-color);
-  background: var(--background-color);
-}
-
-.container {
   width: 400px;
   min-width: 400px;
   max-width: 400px;
   min-height: 550px;
   max-height: 600px;
   padding: 0 0 12px 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-size: 15px;
-  overflow-y: auto;
+  line-height: 1.6;
+  color: var(--text-color);
   background: var(--background-color);
-  border-radius: 18px;
-  box-shadow: 0 4px 24px var(--shadow-color);
 }
 
 .header-modern {
@@ -62,6 +54,20 @@ body {
   letter-spacing: -1px;
   color: var(--primary-color);
   margin-bottom: 0;
+}
+
+.container {
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 550px;
+  max-height: 600px;
+  padding: 0 0 12px 0;
+  font-size: 15px;
+  overflow-y: auto;
+  background: var(--background-color);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px var(--shadow-color);
 }
 
 .card {
