@@ -99,6 +99,7 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 - Prompts are stored locally and are not used for anything else
 
 ---
+
 ## ⚙ Workflow
 
 ```mermaid
@@ -127,7 +128,6 @@ flowchart TD
     L_G_I_0@{ animation: slow } 
     L_H_J_0@{ animation: slow } 
     L_J_B_0@{ animation: slow } 
-
 ```
 
 ---
