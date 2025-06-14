@@ -1,11 +1,8 @@
 <div align="center">
 
-<table>
-  <tr>
-    <td><img src="icons/icon.svg" alt="Logo" width="80"/></td>
-    <td><h1>Prompt Polish Extension</h1></td>
-  </tr>
-</table>
+<img src="icons/icon.svg" alt="Logo" width="100" style="float:left; margin-right:15px;" />
+<h1>Prompt Polish Local 💻</h1>
+
 
 A Chrome extension for enhancing and organizing AI prompts, designed to work locally without any server dependencies.
 
