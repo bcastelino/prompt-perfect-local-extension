@@ -101,30 +101,75 @@ A Chrome extension for enhancing and organizing AI prompts, designed to work loc
 
 ```mermaid
 
-flowchart TD
-    A["User opens extension popup"] L_A_B_0@--> B["User enters prompt in textarea"]
-    B L_B_C_0@--> C@{ label: "Clicks 'Enhance Prompt'" }
-    C L_C_D_0@--> D["Extension sends API request to OpenRouter"]
-    D L_D_E_0@--> E["OpenRouter LLM returns enhanced prompt"]
-    E L_E_F_0@--> F["Extension displays enhanced prompt in UI"]
-    F L_F_G_0@--> G["User can Copy or Save Enhanced Prompt"]
-    G L_G_H_0@--> H@{ label: "Saved prompts appear in 'Saved Prompts' list" } & I["User pastes enhanced prompt into any AI chatbot"]
-    H L_H_J_0@--> J["Personalise the Prompt"]
-    J L_J_B_0@--> B
+flowchart TB
+ subgraph subGraph0["Popup Context"]
+    direction TB
+        PPHTML["popup.html"]
+        PPJS["popup.js"]
+        PPCSS["style.css"]
+  end
+ subgraph subGraph1["Background Context"]
+    direction TB
+        BGJS["background.js"]
+        SECRETS["openrouter_secrets.js"]
+  end
+ subgraph subGraph2["Content Context"]
+    direction TB
+        CJ["content.js"]
+        CCSS["content.css"]
+  end
+ subgraph subGraph3["Project Files"]
+    direction TB
+        Manifest["manifest.json"]
+        Icons["icons/"]
+        Preview["preview/"]
+        README["README.md"]
+        License["LICENSE"]
+  end
+    PPHTML -- opens Popup UI --> PPJS
+    PPJS -- enhancePrompt message --> BGJS
+    BGJS -- HTTP POST --> API["OpenRouter API"]
+    API -- HTTP response --> BGJS
+    BGJS -- enhancedPrompt result --> PPJS
+    PPJS -- savePrompt/readPrompts --> Storage["chrome.storage.local"]
+    CJ -- contextMenuRequest --> BGJS
+    BGJS -- inlineResult --> CJ
+    subGraph3 --> subGraph0
+     PPHTML:::ui
+     PPJS:::ui
+     PPCSS:::ui
+     BGJS:::background
+     SECRETS:::background
+     CJ:::content
+     CCSS:::content
+     Storage:::storage
+     Storage:::storage
+     API:::external
+     API:::external
+     Manifest:::static
+     Icons:::static
+     Preview:::static
+     README:::static
+     License:::static
+    classDef ui fill:#aaf,stroke:#000
+    classDef background fill:#afa,stroke:#000
+    classDef content fill:#aaf,stroke:#000
+    classDef storage fill:#ffa,stroke:#000
+    classDef external fill:#fdd,stroke:#000
+    classDef static fill:#ddd,stroke:#000
+    click PPHTML "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/popup.html"
+    click PPJS "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/popup.js"
+    click PPCSS "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/style.css"
+    click BGJS "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/background.js"
+    click SECRETS "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/openrouter_secrets.js"
+    click CJ "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/content.js"
+    click CCSS "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/content.css"
+    click Manifest "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/manifest.json"
+    click Icons "https://github.com/bcastelino/prompt-polish-local-extension/tree/main/icons/"
+    click Preview "https://github.com/bcastelino/prompt-polish-local-extension/tree/main/preview/"
+    click README "https://github.com/bcastelino/prompt-polish-local-extension/blob/main/README.md"
+    click License "https://github.com/bcastelino/prompt-polish-local-extension/tree/main/LICENSE"
 
-    C@{ shape: rect}
-    H@{ shape: rect}
-
-    L_A_B_0@{ animation: slow } 
-    L_B_C_0@{ animation: slow } 
-    L_C_D_0@{ animation: slow } 
-    L_D_E_0@{ animation: slow } 
-    L_E_F_0@{ animation: slow } 
-    L_F_G_0@{ animation: slow } 
-    L_G_H_0@{ animation: slow } 
-    L_G_I_0@{ animation: slow } 
-    L_H_J_0@{ animation: slow } 
-    L_J_B_0@{ animation: slow } 
 ```
 
 ---
